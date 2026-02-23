@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+
+    <!--Page Title-->
+    <title>AQAS - Answer Quality Analyze System</title>
+
+    <!--Meta Keywords and Description-->
+    <meta name="keywords" content="answer quality analyze, AI assessment, automated evaluation, NLP, education technology">
+    <meta name="description" content="AI-powered Answer Quality Analyze System for automated assessment and quality evaluation">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico" title="Favicon"/>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='namari-color.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='font-awesome.min.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='animate.css')}}"/>
+
+
+
+    <!--Google Webfonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status" class="la-ball-triangle-path">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+<!--End of Preloader-->
+
+<div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
+    <div class="top-border wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;"></div>
+    <div class="right-border wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;"></div>
+    <div class="bottom-border wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
+    <div class="left-border wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"></div>
+</div>
+
+<div id="wrapper">
+
+    <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
+        <div id="header" class="nav-collapse">
+            <div class="row clearfix">
+                <div class="col-1">
+
+                    <!--Logo-->
+                    <div id="logo">
+                        <div class="modern-logo" id="banner-logo">
+                            <i class="fa fa-graduation-cap"></i>
+                            <span>AQAS</span>
+                        </div>
+                        <div class="modern-logo" id="navigation-logo">
+                            <i class="fa fa-graduation-cap"></i>
+                            <span>AQAS</span>
+                        </div>
+                    </div>
+
+                    <aside>
+                      <ul class="social-icons">
+                        <li>
+                          <a target="_blank" title="Facebook" href="https://www.facebook.com/username">
+                              <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
+                          </a>
+                      </li>
+                      <li>
+                          <a target="_blank" title="Google+" href="http://google.com/+username">
+                              <i class="fa fa-google-plus fa-1x"></i><span>Google+</span>
+                          </a>
+                      </li>
+                      <li>
+                          <a target="_blank" title="Twitter" href="http://www.github.com/username">
+                              <i class="fa fa-github fa-1x"></i><span>Github</span>
+                          </a>
+                      </li>
+                      <li>
+                          <a target="_blank" title="Instagram" href="http://www.instagram.com/username">
+                              <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
+                          </a>
+                      </li>
+                      </ul>
+                      <!--End of Social Icons in Header-->
+                  </aside>
+                    <!--Main Navigation-->
+                    <nav id="nav-main">
+                        <ul>
+                            <li>
+                                <a href="#banner">Home</a>
+                            </li>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#services">Technology</a>
+                            </li>
+                            <li>
+                                <a href="#testimonials">Team</a>
+                            </li>
+                            <li>
+                              <a href="{{ url_for('admin_home') }}">Admin</a>
+                          </li>
+                            <li>
+                              <a href="{{ url_for('student_home') }}">Student</a>
+                          </li>
+                            <li>
+                              <a href="{{ url_for('teacher_home') }}">Teacher</a>
+                          </li>
+                        </ul>
+                    </nav>
+                    <!--End of Main Navigation-->
+
+                    <div id="nav-trigger"><span></span></div>
+                    <nav id="nav-mobile"></nav>
+
+                </div>
+            </div>
+        </div><!--End of Header-->
+
+        <!--Banner Content-->
+        <div id="banner-content" class="row clearfix">
+
+            <div class="col-38">
+
+                <div class="section-heading">
+                    <h1>Answer Quality Analyze System</h1>
+                    <h2>Upgrade your assessment process with our Answer Quality Analyze System. Seamlessly evaluate and analyze response quality with precision and efficiency. Whether it's for educational purposes or professional assessments, our AI-powered system automates the evaluation process, providing accurate quality analysis and feedback swiftly. Enhance your projects with this versatile tool, available for personal and commercial use.</h2>
+                </div>
+                <!--Call to Action-->
+                <a href="#about" class="button">START CREATING TODAY</a>
+                <!--End Call to Action-->
+
+            </div>
+
+        </div><!--End of Row-->
+    </header>
+
+    <!--Main Content Area-->
+    <main id="content">
+
+        <!--Introduction-->
+        <section id="about" class="introduction scrollto">
+
+            <div class="row clearfix">
+
+                <div class="col-3">
+                    <div class="section-heading">
+                        <h3>SUCCESS</h3>
+                        <h2 class="section-title">How Our Answer Quality Analyze System Works</h2>
+                        <p class="section-subtitle">Our innovative approach utilizes a combination of teacher's answer module, student module, and our finely tuned AI model to analyze and evaluate response quality accurately using advanced NLP and transformer models.</p>
+                    </div>
+            
+                </div>
+            
+                <div class="col-2-3">
+            
+                    <!--Icon Block-->
+                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
+                        <!--Icon-->
+                        <div class="icon">
+                            <i class="fa fa-magic fa-2x"></i>
+                        </div>
+                        <!--Icon Block Description-->
+                        <div class="icon-block-description">
+                            <h4>AI-Powered Analysis</h4>
+                            <p>Advanced transformer models (BERT-based) with 80% semantic understanding weight, achieving 86% accuracy on unseen questions with intelligent quality assessment.</p>
+                        </div>
+                    </div>
+                    <!--End of Icon Block-->
+            
+                    <!--Icon Block-->
+                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.3s">
+                        <!--Icon-->
+                        <div class="icon">
+                            <i class="fa fa-bolt fa-2x"></i>
+                        </div>
+                        <!--Icon Block Description-->
+                        <div class="icon-block-description">
+                            <h4>Lightning Fast</h4>
+                            <p>Real-time evaluation in under 400ms with automatic quality scoring. Multi-metric hybrid system combining AI semantic analysis with classical NLP techniques.</p>
+                        </div>
+                    </div>
+                    <!--End of Icon Block-->
+            
+                    <!--Icon Block-->
+                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+                        <!--Icon-->
+                        <div class="icon">
+                            <i class="fa fa-check-circle fa-2x"></i>
+                        </div>
+                        <!--Icon Block Description-->
+                        <div class="icon-block-description">
+                            <h4>Intelligent Detection</h4>
+                            <p>Smart synonym recognition, antonym detection, semantic mismatch identification, and contradiction checking with 50+ manual rules plus WordNet integration.</p>
+                        </div>
+                    </div>
+                    <!--End of Icon Block-->
+            
+                    <!--Icon Block-->
+                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.7s">
+                        <!--Icon-->
+                        <div class="icon">
+                            <i class="fa fa-cogs fa-2x"></i>
+                        </div>
+                        <!--Icon Block Description-->
+                        <div class="icon-block-description">
+                            <h4>Production-Ready Stack</h4>
+                            <p>Built with Flask, Python, sentence-transformers (MiniLM-L6-v2), scikit-learn, NLTK, and MySQL. 9-metric evaluation engine with boost/penalty systems for precision scoring.</p>
+                        </div>
+                    </div>
+                    <!--End of Icon Block-->
+            
+                </div>
+            
+            </div>
+            
+
+        </section>
+        <!--End of Introduction-->
+
+
+       
+
+        <!--Content Section-->
+        <div id="services" class="scrollto clearfix">
+
+            <div class="row no-padding-bottom clearfix">
+        
+        
+                <!--Content Left Side-->
+                <div class="col-3">
+                    <!--Project Information-->
+                    <div class="section-heading">
+                        <h3>PROJECT DETAILS</h3>
+                        <h2 class="section-title">Unlocking the Potential of Answer Quality Analyze System</h2>
+                        <p class="section-subtitle">Discover the power of AI-driven automated quality assessment</p>
+                    </div>
+                    <!-- End of Project Information-->
+        
+                </div>
+                <!--End Content Left Side-->
+        
+                <!--Content of the Right Side-->
+                <div class="col-3">
+                    <div class="section-heading">
+                        <h3>BELIEVING</h3>
+                        <h2 class="section-title">Focusing On What Matters Most</h2>
+                        <p class="section-subtitle">Elevating your priorities with our dedication</p>
+                    </div>
+                    <p>Our Answer Quality Analyze System revolutionizes traditional assessment methods, offering an efficient and precise way to analyze and evaluate response quality. With a focus on enhancing learning outcomes and streamlining evaluation processes, we empower educators and learners alike.</p>
+                    <p>
+                        Embrace a future where assessment is not just a measure of knowledge but a catalyst for growth and development. Our commitment to excellence drives us to continually innovate, ensuring our system remains at the forefront of educational technology.
+                    </p>
+                    <!-- Just replace the Video ID "UYJ5IjBRlW8" with the ID of your video on YouTube (Found within the URL) -->
+                    
+                </div>
+                <!--End Content Right Side-->
+        
+                <div class="col-3">
+                    <div class="ai-illustration">
+                        <i class="fa fa-lightbulb-o fa-5x"></i>
+                        <i class="fa fa-cogs fa-3x"></i>
+                        <i class="fa fa-graduation-cap fa-4x"></i>
+                    </div>
+                </div>
+        
+            </div>
+        
+        
+        </div>
+        
+        <!--End of Content Section-->
+
+        <!--Testimonials-->
+        <aside id="testimonials" class="scrollto text-center" data-enllax-ratio=".2">
+
+            <div class="row clearfix">
+
+                <div class="section-heading">
+                    <h3>Teams</h3>
+                    <h2 class="section-title">Meet our project Team</h2>
+                </div>
+
+                <!--User Testimonial-->
+                <blockquote class="col-4 testimonial classic">
+                    <img src="{{url_for('static',filename="images/user-images/user-3.jpg")}}" alt="User"/>
+                    <footer>Adarsh S</footer>
+                </blockquote>
+                <!-- End of Testimonial-->
+
+                <!--User Testimonial-->
+                <blockquote class="col-4 testimonial classic">
+                    <img src="{{url_for('static',filename="images/user-images/user-3.jpg")}}" alt="User"/>
+                    <footer>Freddy Das Felix</footer>
+                </blockquote>
+                <!-- End of Testimonial-->
+
+                <!--User Testimonial-->
+                <blockquote class="col-4 testimonial classic">
+                    <img src="{{url_for('static',filename="images/user-images/user-3.jpg")}}" alt="User"/>
+                    <footer>Durga V S</footer>
+                </blockquote>
+                <!-- End of Testimonial-->
+
+                <!--User Testimonial-->
+                <blockquote class="col-4 testimonial classic">
+                    <img src="{{url_for('static',filename="images/user-images/user-3.jpg")}}" alt="User"/>
+                    <footer>Meenakshi S</footer>
+                </blockquote>
+                <!-- End of Testimonial-->
+
+            </div>
+
+        </aside>
+
+        <!--Pricing Tables-->
+        <section id="pricing" class="secondary-color text-center scrollto clearfix ">
+            <div class="row clearfix">
+
+                <div class="section-heading">
+                    <h3>YOUR CHOICE</h3>
+                    <h2 class="section-title">OUR MODULES</h2>
+                </div>
+
+                <!--Pricing Block-->
+                <div class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="pricing-block-content">
+                        <h3>Admin</h3>
+                        <div class="module-icon-wrapper">
+                            <i class="fa fa-cog fa-5x module-icon"></i>
+                        </div>
+                        <a href="{{ url_for('admin_home') }}" class="button">Login as Admin</a>
+                    </div>
+                </div>
+                <!--End Pricing Block-->
+
+                <!--Pricing Block-->
+                <div class="pricing-block featured col-3 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="pricing-block-content">
+                        <h3>Teacher</h3>
+                        <div class="module-icon-wrapper">
+                            <i class="fa fa-book fa-5x module-icon"></i>
+                        </div>
+                        
+                        <a href="{{ url_for('teacher_home') }}" class="button">Login as Teacher</a>
+                    </div>
+                </div>
+                <!--End Pricing Block-->
+
+                <!--Pricing Block-->
+                <div class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="pricing-block-content">
+                        <h3>Student</h3>
+                        <div class="module-icon-wrapper">
+                            <i class="fa fa-graduation-cap fa-5x module-icon"></i>
+                        </div>
+
+                        <a href="{{ url_for('student_home') }}" class="button">Login as Student</a>
+                    </div>
+                </div>
+                <!--End Pricing Block-->
+
+            </div>
+        </section>
+        <!--End of Pricing Tables-->
+
+    </main>
+    <!--End Main Content Area-->
+
+
+    <!--Footer-->
+    <footer id="landing-footer" class="clearfix">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <ul class="social-icons">
+                      <li>
+                          <a target="_blank" title="Facebook" href="https://www.facebook.com/username">
+                              <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
+                          </a>
+                      </li>
+                      <li>
+                          <a target="_blank" title="Google+" href="http://google.com/+username">
+                              <i class="fa fa-google-plus fa-1x"></i><span>Google+</span>
+                          </a>
+                      </li>
+                      <li>
+                          <a target="_blank" title="Twitter" href="http://www.github.com/username">
+                              <i class="fa fa-github fa-1x"></i><span>Github</span>
+                          </a>
+                      </li>
+                      <li>
+                          <a target="_blank" title="Instagram" href="http://www.instagram.com/username">
+                              <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </footer>
+    <!--End of Footer-->
+
+</div>
+
+<!-- Include JavaScript resources -->
+<script src="{{url_for('static',filename="js/jquery.1.8.3.min.js")}}"></script>
+<script src="{{url_for('static',filename="js/featherlight.min.js")}}"></script>
+<script src="{{url_for('static',filename="js/featherlight.gallery.min.js")}}"></script>
+<script src="{{url_for('static',filename="js/jquery.enllax.min.js")}}"></script>
+<script src="{{url_for('static',filename="js/jquery.scrollUp.min.js")}}"></script>
+<script src="{{url_for('static',filename="js/jquery.easing.min.js")}}"></script>
+<script src="{{url_for('static',filename="js/jquery.easing.min.js")}}"></script>
+<script src="{{url_for('static',filename="js/jquery.stickyNavbar.min.js")}}"></script>
+<script src="{{url_for('static',filename="js/jquery.waypoints.min.js")}}"></script>
+<script src="{{url_for('static',filename="js/images-loaded.min.js")}}"></script>
+<script src="{{url_for('static',filename="js/lightbox.min.js")}}"></script>
+<script src="{{url_for('static',filename="js/site.js")}}"></script>
+
+
+</body>
+<style>
+  /* ==========================================
+     MODERN AI-THEMED ANIMATIONS - 2026 
+     ========================================== */
+
+  /* Modern Text Logo Styling */
+  .modern-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 28px;
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+  }
+
+  .modern-logo i {
+      font-size: 32px;
+      color: #11cdef;
+      animation: iconPulse 2s ease-in-out infinite;
+  }
+
+  .modern-logo span {
+      background: linear-gradient(45deg, #5e72e4, #11cdef);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+  }
+
+  @keyframes iconPulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+  }
+
+  /* AI Illustration Styling */
+  .ai-illustration {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      padding: 40px;
+      position: relative;
+  }
+
+  .ai-illustration i {
+      color: #5e72e4;
+      animation: floatIcon 3s ease-in-out infinite;
+      position: relative;
+  }
+
+  .ai-illustration i:nth-child(1) {
+      animation-delay: 0s;
+  }
+
+  .ai-illustration i:nth-child(2) {
+      animation-delay: 0.5s;
+  }
+
+  .ai-illustration i:nth-child(3) {
+      animation-delay: 1s;
+  }
+
+  @keyframes floatIcon {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-20px) rotate(5deg); }
+  }
+
+  /* Module Icon Styling */
+  .module-icon-wrapper {
+      width: 200px;
+      height: 200px;
+      margin: 30px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #5e72e4 0%, #825ee4 100%);
+      box-shadow: 0 10px 40px rgba(94, 114, 228, 0.4);
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+  }
+
+  .module-icon-wrapper::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+      transform: rotate(45deg);
+      animation: shimmer 3s infinite;
+  }
+
+  @keyframes shimmer {
+      0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+      100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+  }
+
+  .module-icon {
+      color: #fff;
+      z-index: 1;
+      animation: iconBounce 2s ease-in-out infinite;
+  }
+
+  @keyframes iconBounce {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+  }
+
+  .pricing-block:hover .module-icon-wrapper {
+      transform: scale(1.1) rotate(5deg);
+      box-shadow: 0 15px 50px rgba(94, 114, 228, 0.6);
+  }
+
+  .pricing-block:hover .module-icon {
+      animation: iconSpin 0.6s ease;
+  }
+
+  @keyframes iconSpin {
+      0% { transform: rotate(0deg) scale(1); }
+      50% { transform: rotate(180deg) scale(1.2); }
+      100% { transform: rotate(360deg) scale(1); }
+  }
+
+  /* Animated Gradient Background - Professional Blue-Purple */
+  #banner {
+      background: linear-gradient(-45deg, #5e72e4, #825ee4, #11cdef, #5e72e4);
+      background-size: 400% 400%;
+      animation: gradientShift 15s ease infinite;
+      position: relative;
+      overflow: hidden;
+  }
+
+  /* Ensure text is white and readable */
+  #banner, #banner-content, #banner h1, #banner h2, #banner p {
+      color: #ffffff !important;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Particle Effect Overlay */
+  #banner::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: 
+        radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+      animation: particleFloat 20s ease-in-out infinite;
+      pointer-events: none;
+  }
+
+  @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+  }
+
+  @keyframes particleFloat {
+      0%, 100% { opacity: 0.5; transform: translateY(0px); }
+      50% { opacity: 0.8; transform: translateY(-20px); }
+  }
+
+  /* Logo Glow Animation */
+  #logo img {
+      animation: logoGlow 3s ease-in-out infinite;
+      filter: drop-shadow(0 0 10px rgba(94, 114, 228, 0.5));
+      transition: transform 0.3s ease;
+  }
+
+  #logo img:hover {
+      transform: scale(1.05);
+      filter: drop-shadow(0 0 20px rgba(94, 114, 228, 0.8));
+  }
+
+  @keyframes logoGlow {
+      0%, 100% { filter: drop-shadow(0 0 10px rgba(94, 114, 228, 0.5)); }
+      50% { filter: drop-shadow(0 0 25px rgba(94, 114, 228, 0.9)); }
+  }
+
+  /* Icon Block Hover Effects */
+  .icon-block {
+      transition: all 0.3s ease;
+      position: relative;
+  }
+
+  .icon-block:hover {
+      transform: translateY(-10px);
+  }
+
+  .icon-block .icon {
+      transition: all 0.4s ease;
+  }
+
+  .icon-block:hover .icon {
+      transform: scale(1.2) rotate(5deg);
+      color: #5e72e4;
+  }
+
+  .icon-block::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%) scaleX(0);
+      width: 80%;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, #5e72e4, transparent);
+      transition: transform 0.3s ease;
+  }
+
+  .icon-block:hover::after {
+      transform: translateX(-50%) scaleX(1);
+  }
+
+  /* Module Cards Modern Hover */
+  .pricing-block {
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+  }
+
+  .pricing-block::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(94, 114, 228, 0.15) 0%, transparent 70%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+  }
+
+  .pricing-block:hover::before {
+      opacity: 1;
+      animation: ripple 1.5s ease-out;
+  }
+
+  .pricing-block:hover {
+      transform: translateY(-15px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  }
+
+  @keyframes ripple {
+      from { transform: translate(-50%, -50%) scale(0); }
+      to { transform: translate(-50%, -50%) scale(1); opacity: 0; }
+  }
+
+  /* Team Member Cards */
+  .testimonial {
+      transition: all 0.3s ease;
+      position: relative;
+  }
+
+  .testimonial:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 30px rgba(94, 114, 228, 0.3);
+  }
+
+  .testimonial img {
+      transition: all 0.3s ease;
+      border-radius: 50%;
+      border: 3px solid transparent;
+  }
+
+  .testimonial:hover img {
+      border-color: #5e72e4;
+      transform: scale(1.1);
+  }
+
+  /* Button Glow Effect */
+  .button {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
+  }
+
+  .button::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.3);
+      transform: translate(-50%, -50%);
+      transition: width 0.6s, height 0.6s;
+  }
+
+  .button:hover::before {
+      width: 300px;
+      height: 300px;
+  }
+
+  .button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(94, 114, 228, 0.4);
+  }
+
+  /* Section Heading Animation */
+  .section-heading {
+      position: relative;
+  }
+
+  .section-heading::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, #5e72e4, transparent);
+      animation: lineExpand 2s ease-in-out infinite;
+  }
+
+  @keyframes lineExpand {
+      0%, 100% { width: 60px; opacity: 0.5; }
+      50% { width: 100px; opacity: 1; }
+  }
+
+  /* Smooth Scroll Animations */
+  .icon-block, .pricing-block, .testimonial {
+      opacity: 0;
+      animation: fadeInUp 0.6s ease forwards;
+  }
+
+  .icon-block:nth-child(1) { animation-delay: 0.1s; }
+  .icon-block:nth-child(2) { animation-delay: 0.2s; }
+  .icon-block:nth-child(3) { animation-delay: 0.3s; }
+  .icon-block:nth-child(4) { animation-delay: 0.4s; }
+
+  @keyframes fadeInUp {
+      from {
+          opacity: 0;
+          transform: translateY(30px);
+      }
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+
+  /* AI Circuit Pattern Overlay */
+  #banner-content::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: 
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+      background-size: 50px 50px;
+      animation: circuitMove 30s linear infinite;
+      pointer-events: none;
+  }
+
+  @keyframes circuitMove {
+      from { background-position: 0 0; }
+      to { background-position: 50px 50px; }
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+      .icon-block:hover { transform: translateY(-5px); }
+      .pricing-block:hover { transform: translateY(-10px); }
+      .testimonial:hover { transform: scale(1.02); }
+  }
+</style>
+</html>
